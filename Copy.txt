@@ -1,0 +1,253 @@
+🎯 App Purpose:
+Design and develop an educational mobile application named Material Hub X for students preparing for IIT JEE / NEET / UPSC. It should be similar to apps like PW or Study Ratna — but with modern + simple + copyright-safe UI.
+---
+📱 Home Page UI:
+👑 Top Section:
+Class & Batch dropdown selector (e.g. “11th - IIT JEE”)
+Navigation drawer icon (top left)
+🎯 Preparation Meter :
+Title: “Preparation Meter” 
+Subtitle: “Assigned based on comparison with toppers”
+Horizontal progress visual (graph line)
+---
+⚡ Quick Access (Grid 3x2):
+My Batches
+Battleground
+My Doubts
+My History
+Downloads
+Dashboard / Bookmarks
+Use rounded square white cards with icons + bold titles
+---
+🔍 Explore Section (Vertical List with Icons):
+Test Series → “Explore available test series here”
+Library → “Access all your free study material here”
+Add 1-2 more custom tiles as needed
+🧭 Bottom Navigation Bar (Sticky):
+Study
+Batches ( available soon )
+QUIZ
+Store
+Note: Should be visible even when scrolling ---
+🎨 Themes:
+Modern Classic Simple design
+Light & Dark mode both
+Use purple, white, and navy blue palette
+Rounded cards, soft shadows, clean font
+MAKE A SHOW XP AND LEADERBOARD ALSO
+🔒 Functionality (Backend):
+Auth (Email)
+store for test, material, user progress
+PDF download (only in app, no external access)
+Screenshot + screen record protection
+Tests hosted within app
+Admin panel (optional): upload material, assign tests 
+WITHOUT LOGIN USER COULD NOT DOWNLOAD ANY ITEM.
+ACCORDING TO WASTING TIME IN APP A XP FEATURE 1XP IN EVERY 2 MINUTE.
+AND ALSO MAKE HOMEPAGE.  USER CAN CHOOSE WHICH INSTITUTE MATERIAL [ PW , ALLEN , FITJEE , MOTION Material hub or etc admin add extra batch or remove batch ]  SHOWS 
+📂 Modules:
+Batch-wise content loading
+Dynamic home content (based on login batch)
+No live class (as per user request)
+Scrollable home content with CTA buttons Copyright Safety:
+Do NOT copy PW UI directly
+Use different icons, layout shift, and new colors
+Use placeholder names like “ARJUNA JEE 2026” Deliverables:
+ full project with all screens
+APK file (preview + production)
+ReadMe guide for setup
+
+
+🛠️ Admin Panel Prompt for Material Hub X
+
+🎯 Purpose:
+
+Design and build a secure, web-based Admin Panel for the educational mobile app Material Hub X. This panel will allow admins to upload, edit, and manage all content (batches, PDFs, tests, users, etc.) used in the student app.
+
+
+---
+
+🌐 Admin Panel Features:
+
+🔐 Authentication:
+
+Login screen (Email + Password) using Firebase Auth
+
+Role-based access control (admin, sub-admin, read-only)
+
+Reset password option via email
+
+
+
+---
+
+🧾 Dashboard (Main Screen):
+
+Total Users Count
+
+Total Tests Uploaded
+
+Total Study Materials (PDFs/Videos)
+
+Graphs: Monthly Active Users, Test Attempts, Downloads
+
+
+
+---
+
+📦 Modules to Manage:
+
+1️⃣ Batch Manager
+
+Add / Edit / Delete Batches (e.g. “JEE Core 2026”)
+
+Assign class (11th/12th), stream (NEET/JEE)
+
+Upload batch poster or logo
+
+
+2️⃣ Subject + Content Manager
+
+Add subjects under each batch
+
+Upload:
+
+📘 PDFs (Firebase Storage)
+
+🎥 Videos (YouTube link or embed)
+
+
+Assign chapter/topic tags
+
+Toggle visibility (draft/published)
+
+
+3️⃣ Test Manager
+
+Create MCQ tests with:
+
+Title, duration, number of questions
+
+Options A–D with correct answer
+
+Explanation (optional)
+
+
+Assign to specific batch + subject
+
+View result analytics (top scorer, avg. time)
+
+
+4️⃣ User Manager
+
+View all registered users (email, phone, batch)
+
+Ban / Suspend / Reset password
+
+Export user data to Excel (optional)
+
+
+5️⃣ Download Tracker
+
+Track who downloaded which material
+
+Filter by user/date/material
+
+
+
+---
+
+🖼 UI Design:
+
+Responsive (Desktop + Mobile)
+
+Sidebar with icons:
+
+Dashboard
+
+Batches
+
+Subjects
+
+Materials
+
+Tests
+
+Users
+
+
+Clean modern UI using Tailwind CSS or Bootstrap 5
+
+Light + dark mode toggle (optional)
+
+
+
+---
+
+💽 Tech Stack Suggestion:
+
+Frontend:
+
+Backend 
+
+Database:  
+
+Storage:  Storage for PDFs & Images
+
+Auth:  Authentication
+
+
+
+---
+
+🔐 Security Rules (Firebase):
+
+Only admins can write/upload materials
+
+All write/delete operations require admin claims
+
+Students can only read what's assigned to their batch
+
+
+
+---
+
+📤 Deliverables:
+
+Full Admin Panel Source Code
+
+Admin login credentials (test users)
+
+PDF guide or video tutorial for usage
+
+
+
+---
+
+⚠️ Notes:
+
+Use custom icons and layout (no PW copy)
+
+All uploads should be in-app visible only (no direct downloads)
+
+
+
+---
+
+📝 Optional Add-on:
+
+Notifications push system
+
+Schedule test publishing time/date
+
+Activity log (who uploaded what, when)
+
+
+
+---
+
+📎 Sample Usage:
+
+> "Add new batch for NEET 2026 → Upload Bio PDFs → Create chapter-wise test → Assign to students in batch
+
+He should also have access to the store function 
